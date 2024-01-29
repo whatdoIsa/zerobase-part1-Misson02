@@ -1,245 +1,154 @@
 /* 오늘의 쇼핑 제안 */
 
-/* CSS 작성 */
-
-body{
-    width: 1280px;
-    height: 2000px;
-}
-
-.logo picture img{   
-    position: absolute;
+* {
+    margin: 0;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100px;
+  }
+  
+  header {
+    position: relative;
+    width: 1022px;
+    margin: 0 auto 48px;
+  }
+  
+  header a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  header img {
     width: 176px;
     height: 40px;
-    left: 147px;
-    top: 100px;
-}
-
-/* .container{
+  }
+  
+  /* section */
+  
+  section h2 {
     position: relative;
-    width: 1020px;
-    height: 1010px;
-    left: 321px;
-    top: 188px;
-} */
-
-.offer{
-    position: absolute;
     width: 1022px;
-    height: 354px;
-    left: 145px;
-    top: 188px;
-
-    margin-right: 0px;
-}
-
-.offerTitle{
-    position: absolute;
+    margin: 0 auto 24px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-
-    width: 234px;
-    height: 30px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.titleIcon img{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-black);
+  }
+  
+  section h2 .titleImg {
+    display: inline-block;
+    background-image: url('../../assets/icon/shopping.svg');
     width: 30px;
     height: 30px;
-}
-
-.offerTitle h2{
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 115%;
-
+  }
+  
+  /* article */
+  
+  article {
+    position: relative;
+    width: 1022px;
+    top: 24px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-}
-
-
-.offerList{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 5px;
-
-    /* position: absolute; */
-    width: 1020px;
-    height: 354px;
-    left: 2px;
-    top: 54px;
-
-    /* justify-content: space-evenly; */
-}
-
-.productCard{
+  }
+  
+  article .product {
     position: relative;
     width: 200px;
     height: 270px;
-    top: 54px;
-
-    padding-top: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    background: #FFFFFF;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.BadgeDiscount{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 3px 10px;
-    gap: 10px;
-
-    position: absolute;
-    width: 53px;
-    height: 30px;
-    left: 0px;
-    top: 0px;
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    color: #FFFFFF;
-    /* Red/500 */
-
-    background: #E52330;
-    border-radius: 0px 0px 4px 0px;
-}
-
-.info{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-
-    /* position: absolute; */
-    width: 172px;
-    height: 66px;
-    left: 14px;
-    top: 186px;
-}
-
-.infoName{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    position: absolute;   
-    width: 172px;
-    height: 17px;
-    padding-right: 0px;
-    padding-left: 0px;
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-}
-
-.middle{
-    position: relative;  
-    width: 120px;
-    height: 37px;
-    top: 29px;
-    
-}
-
-.middle img{
-
-    width: 55px;
-    height: 16px;
-}
-
-.review{
-    font-size: 0;
-    /* display: inline-block; */
+    justify-content: center;
+    /* margin-left: 5px; */
+  }
+  
+  article .product a {
     position: relative;
-    width: 117px;
-    height: 17px;
-    /* left: 14px; */
-    top: 29px;
-}
-
-.review2{
-    font-size: 0;
-    /* display: inline-block; */
+    width: 200px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  article .product .discount {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 30px;
+    z-index: 1;
+    background-color: var(--color-red-500);
+    color: var(--color-white);
+    border-radius: 0px 0px 4px 0px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  article .product img {
     position: relative;
-    width: 117px;
-    height: 17px;
-  /* left: 14px; */
-
-}
-
-.infoStar4{
-    display: inline-block;
-    position: absolute;
-    width: 68px;
-    height: 12px;
-    left: 0px;
-    background-image: url("/assets/sprites/rating-stars.png");
-    background-position: 0px -112px;
-    /* overflow: hidden; */
-    /* float: left 제거 */
-}
-
-.infoStar45{
-    display: inline-block;
-    position: absolute;
-    width: 68px;
-    height: 12px;
-    left: 0px;
-    background-image: url("/assets/sprites/rating-stars.png");
-    background-position: 0px -126px;
-}
-
-.infoStar5{
-    display: inline-block;
-    position: absolute;
-    width: 68px;
-    height: 12px;
-    left: 0px;
-    background-image: url("/assets/sprites/rating-stars.png");
-    background-position: 0px -140px;
-}
-
-.reviewNum{
-    display: inline-block;
-    position: absolute;
-    height: 17px;
-    width: 45px;
-    right: 0px;
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+  
+  article p {
+    color: var(--color-black);
     font-size: 14px;
-    line-height: 120%;
-
-    color: #767676;
-}
-
-
-
-.titleIcon{
-    background-image: url("shopping.svg");
-}
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  article .product .rocket-dilivery {
+    display: block;
+    margin-left: 18px;
+  }
+  
+  article .product .free-dilivery {
+    color: var(--color-gray-700);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 12px 19px;
+  }
+  
+  article .product .rating-stars {
+    background-image: url('../../assets/sprites/rating-stars.png');
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 19px;
+  }
+  
+  article .product .star4 {
+    background-position: 0 -112px;
+  }
+  
+  article .product .star-between45 {
+    background-position: 0 -126px;
+  }
+  
+  article .product .star5 {
+    background-position: 0 -140px;
+  }
+  
+  article .product .review-count {
+    position: absolute;
+    top: 241px;
+    left: 92px;
+    color: var(--color-gray-700);
+    font-size: 14px;
+    font-weight: 400;
+  }
