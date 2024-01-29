@@ -1,133 +1,138 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="https://www.coupang.com/">
+          <h1>
+            <picture>
+              <source srcset="./assets/logo/logo.webp" type="image/webp" />
+              <img src="./assets/logo/logo.png" alt="logo" />
+            </picture>
+          </h1>
+        </a>
+      </header>
 
-  <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
+      <section>
+        <h2><span class="titleImg"></span>오늘의 쇼핑 제안</h2>
 
-  <link rel="stylesheet" href="./stylesheets/pages/offer.css">
+        <article>
+          <div class="product">
+            <a href="/" target="_blank">
+              <div class="discount" aria-label="할인율">30%</div>
 
+              <img
+                src="./assets/offer/furniture.jpg"
+                alt="솔로리빙 셀린 렌지대 600 800 주방 수납장 템바보드 전자레인지 밥솥 에어프라이어 주방정리 수납장"
+              />
 
-  <link rel="icon" href="/assets/favicon/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
-</head>
+              <p>솔로리빙 셀린 렌지대 600...</p>
 
-<body>
-  <a href="https://www.coupang.com"></a>
-      <header class="logo">
-            <h1>
-              <picture>
-                <!-- WebP 형식을 지원하는 브라우저를 위한 source 태그 -->
-                <source srcset="./assets/logo/logo.png" alt="쿠팡로고" type="image/webp">
-
-                <!-- WebP 형식을 지원하지 않는 브라우저를 위한 img 태그 -->
-                <img src="./assets/logo/logo.png" alt="쿠팡로고">
-              </picture>
-            </h1>
-        </header>
-  </a>
-
-  
-      <section class="offer">
-        <div class="offerTitle">
-          <div class="titleIcon">
-            <img src="./assets/icon/shopping.svg">
-          </div>
-          <h2>오늘의 쇼핑 제안</h2>
-        </div>
-
-        <div class="offerList">
-          
-          <div class="productCard">
-            <div class="BadgeDiscount">30%</div>                   
-            <div class="offerImg">
-              <img src="./assets/offer/furniture.jpg" alt="솔로리빙">
-            </div>
-            <div class="info">
-              <div class="infoName">솔로리빙 셀린 렌지대 600 800 주방 수납장 템바보드 전자레인지 밥솥 에어프라이어 주방정리 수납장</div>
-              <div class="review">
-                <div class="infoStar45" aria-label="평점은 4.5점 입니다."></div>
-                <div class="reviewNum" aria-label="리뷰 수는 3,255개 입니다.">(3,255)</div>
+              <div
+                class="rating-stars star-between45"
+                aria-label="평점 점수"
+              ></div>
+              <div class="review-count" aria-label="구매자 리뷰 수">
+                (3,255)
               </div>
-
-            </div>
-          </div>
-          
-          
-          <div class="productCard">
-            <div class="offerImg">
-              <img src="./assets/offer/renton.jpg" alt="랜턴">
-            </div>
-            <div class="info">
-              <div class="infoName">옆 동네몰 레트로 LED 감성 캠핑 랜턴 노란빛 대, 빈티지 브론즈</div>
-              <div class="middle">
-                <img src = "/assets/icon/badge-rocket.svg" aria-label="로켓배송 시 가격입니다." alt="로켓배송">
-                <div class="review2">
-                  <div class="infoStar45" aria-label="평점은 4.5점 입니다."></div>
-                  <div class="reviewNum" aria-label="리뷰 수는 1,807개 입니다.">(1,807)</div>
-                </div>              
-              </div>
-
-            </div>
-          </div>
-     
-          
-          <div class="productCard">
-            <div class="offerImg">
-              <img src="./assets/offer/drying-rack.jpg" alt="식기건조대">
-            </div>
-            <div class="info">
-              <div class="infoName">프리미엄 부착식 식기건조대 (600~900)AL 싱크대선반 씽크선반 주방선반, 선택-2) 프리미엄 식기건조대 800AL</div>
-              <div class="review">
-                <div class="infoStar4" aria-label="평점은 4점 입니다."></div>
-                <div class="reviewNum" aria-label="리뷰 수는 2,423개 입니다.">(2,423)</div>
-              </div>
-            </div>
-          </div>
-          
-          
-          <div class="productCard">
-            <div class="BadgeDiscount">10%</div>
-            <div class="offerImg">
-              <img src="./assets/offer/boohgle.jpg" alt="냄비보오글">
-            </div>
-            <div class="info">
-              <div class="infoName">타지 않는 냄비 보오글 네모 6종 풀세트(51가지 안전시험 인증, hBN 세라믹 코팅)</div>
-              <div class="middle">
-                <img src = "/assets/icon/badge-rocket.svg" aria-label="로켓배송 시 가격입니다." alt="로켓배송">
-                <div class="review2">
-                  <div class="infoStar5" aria-label="평점은 5점 입니다."></div>
-                  <div class="reviewNum" aria-label="리뷰 수는 1,009개 입니다.">(1,009)</div>
-                </div>                
-              </div>
-
-            </div>
-          </div>
-          
-          
-          <div class="productCard">
-            <div class="BadgeDiscount">25%</div>
-            <div class="offerImg">
-              <img src="./assets/offer/deskset.jpg" alt="데스크">
-            </div>
-            <div class="info">
-              <div class="infoName">베스트리빙 베이직 멀티 H형 1200 철제 책상세트, 화이트</div>
-              <div class="review">
-                <div class="infoStar4" aria-label="평점은 4점 입니다."></div>
-                <div class="reviewNum" aria-label="리뷰 수는 3,203개 입니다.">(3,203)</div>
-              </div>
-            </div>            
+            </a>
           </div>
 
-        </div>
-        
+          <div class="product">
+            <a href="/" target="_blank">
+              <img
+                src="./assets/offer/renton.jpg"
+                alt="옆 동네몰 레트로 LED 감성 캠핑 랜턴 노란빛 대, 빈티지 브론즈"
+              />
+
+              <p>옆 동네몰 레트로 LED 감성...</p>
+              <img
+                class="rocket-dilivery"
+                src="./assets/icon/badge-rocket.svg"
+                alt="로켓배송"
+              />
+              <div
+                class="rating-stars star-between45"
+                aria-label="평점 점수"
+              ></div>
+              <div class="review-count" aria-label="구매자 리뷰 수">
+                (1,807)
+              </div>
+            </a>
+          </div>
+
+          <div class="product">
+            <a href="/" target="_blank">
+              <img
+                src="./assets/offer/drying-rack.jpg"
+                alt="프리미엄 부착식 식기건조대 (600~900)AL 싱크대선반 씽크선반 주방선반, 선택-2) 프리미엄 식기건조대 800AL"
+              />
+
+              <p>프리미엄 부착식 식기건조...</p>
+              <div class="free-dilivery" aria-label="배송유형">무료배송</div>
+              <div class="rating-stars star4" aria-label="평점 점수"></div>
+              <div class="review-count" aria-label="구매자 리뷰 수">
+                (2,423)
+              </div>
+            </a>
+          </div>
+
+          <div class="product">
+            <a href="/" target="_blank">
+              <div class="discount" aria-label="할인율">10%</div>
+
+              <img
+                src="./assets/offer/boohgle.jpg"
+                alt="타지 않는 냄비 보오글 네모 6종 풀세트(51가지 안전시험 인증, hBN 세라믹 코팅)"
+              />
+
+              <p>타지 않는 냄비 보오글 네모...</p>
+              <img
+                class="rocket-dilivery"
+                src="./assets/icon/badge-rocket.svg"
+                alt="로켓배송"
+                aria-label="배송유형"
+              />
+              <div class="rating-stars star5" aria-label="평점 점수"></div>
+              <div class="review-count" aria-label="구매자 리뷰 수">
+                (1,009)
+              </div>
+            </a>
+          </div>
+
+          <div class="product">
+            <a href="/" target="_blank">
+              <div class="discount" aria-label="할인율">25%</div>
+
+              <img
+                src="./assets/offer/deskset.jpg"
+                alt="베스트리빙 베이직 멀티 H형 1200 철제 책상세트, 화이트"
+              />
+
+              <p>베스트리빙 베이직 멀티 H...</p>
+              <div class="free-dilivery" aria-label="배송유형">무료배송</div>
+              <div class="rating-stars star4" aria-label="평점 점수"></div>
+              <div class="review-count" aria-label="구매자 리뷰 수">
+                (3,203)
+              </div>
+            </a>
+          </div>
+        </article>
       </section>
-
-</body>
-
+    </div>
+  </body>
 </html>
